@@ -2,7 +2,17 @@
 
 Intelligent trading **assistant** with mandatory human approval (Twilio WhatsApp) before paper execution.
 
-## Phase 2 (current): ML predictions
+## Phase 3 (current): LLM agent + tools
+
+- MCP-style tool registry (`get_signals`, `get_model_prediction`, `propose_trade`, …)
+- Orchestrator gathers context, then LLM (or rule fallback) recommends BUY/SELL/HOLD
+- Draft proposals only — no WhatsApp / execution
+
+```bash
+python scripts/run_agent.py AAPL
+```
+
+## Phase 2: ML predictions
 
 - Time-based train/val/test splits (no shuffle)
 - Logistic regression: P(next-day return > 0)
