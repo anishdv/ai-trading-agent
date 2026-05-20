@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+data/raw/
+data/processed/
+data/proposals/
+models/
+!tests/fixtures/
+!tests/fixtures/raw/
+!tests/fixtures/raw/*.parquet
+.ipynb_checkpoints/
+*.egg-info/
